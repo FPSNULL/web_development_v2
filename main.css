@@ -1,0 +1,12 @@
+.btn-small {
+    margin: 0 4px;
+}
+#gif {
+    position: fixed;
+    float: 0;
+}
+header img {
+    width: 40px;
+    border-radius: 360px;
+    margin: 1vw;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>P2 - Gabriel Moraes </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='materialize.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body class="blue-grey darken-4 blue-grey-text text-lighten-4">
+    <header id="top">
+        <img src="honkai.gif" alt="honkai">
+    </header>
+    
+    <div class="container row" id="page">
+        
+        <h1 class="center">P2 - Gabriel Moraes</h1>
+
+        <form class="center container col s12 m10 offset-m1 l10 offset-l1 xl5" id="formuser" onsubmit="return false" action="#">
+            
+            <input type="hidden" name="id" id="id">
+            <div class="input-field">
+                <label for="name">Name</label>
+                <input class="validate blue-grey-text text-lighten-4" placeholder="" type="text" name="name" id="name" autocomplete="off">
+            </div>
+            <div class="input-field">
+                <label for="email">Email</label>
+                <input class="validate blue-grey-text text-lighten-4" placeholder="" type="email" name="email" id="email" autocomplete="off">
+            </div>
+            
+            <button class="btn waves-effect waves-light" onclick="Save()">
+                Save User
+                <i class="fa-solid fa-circle-right"></i>
+            </button>
+        </form>
+
+        <div class="center container col s12 m10 offset-m1 l10 offset-l1 xl5 offset-xl2" id="userlist">
+            <h3>Lista de users</h3>
+            <ul class="collection blue-grey-text text-darken-4" id="list">
+            </ul>
+        </div>
+
+    </div>
+    
+    <script src='main.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
